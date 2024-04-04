@@ -88,6 +88,8 @@
         };
 
         packages.safe = buildZigApp "-Doptimize=ReleaseSafe";
+        packages.small = buildZigApp "-Doptimize=ReleaseSmall";
+        packages.fast = buildZigApp "-Doptimize=ReleaseFast";
         packages.debug = buildZigApp "";
         packages.default = packages.safe;
       }
